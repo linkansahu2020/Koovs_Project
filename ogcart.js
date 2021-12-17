@@ -88,5 +88,6 @@ var total = 0;
     totalPrice()
     function totalPrice(){
         document.querySelector("#lbag").textContent=total;
+        localStorage.setItem("bagPrice",JSON.stringify(total))
     }
     
