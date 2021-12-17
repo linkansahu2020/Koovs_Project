@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sign In</title>
+    <link rel = "icon" href = "https://media.glassdoor.com/sqll/674665/koovs-squarelogo-1466082768191.png"  type = "image/x-icon">
+	<link rel="stylesheet" type="text/css" href="otp2.css">
+</head>
+<body>
+	<div id="p_container">
+		<h2 class="ph1">OTP VERIFICATION</h2>
+        <br>
+        <h4 class="ph4">Enter 6-digit OTP sent to your number</h4>
+		<br>
+		<br>
+		<div class="pflex">
+			<input type="text" id="first" class="pclass" maxlength="1" onkeyup="clickEvent(this,'sec')">
+			<input type="text" id="sec" class="pclass" maxlength="1" onkeyup="clickEvent(this,'third')">
+			<input type="text" id="third" class="pclass" maxlength="1" onkeyup="clickEvent(this,'fourth')">
+			<input type="text" id="fourth" class="pclass" maxlength="1" onkeyup="clickEvent(this,'fifth')">
+            <input type="text" id="fifth" class="pclass" maxlength="1" onkeyup="clickEvent(this,'sixth')">
+			<input type="text" id="sixth" class="pclass" maxlength="1">
+		</div>
+		<button id="pbtn">VERIFY</button>
+		<br>
+		<button class="pb2b3" onclick="alert ('OTP re-send successfully')">Resend OTP</button>
+		<a href="otp.html"><button class="pb2b3">Change Phone Number</button></a>
+		<!-- <a href="otp2.html"><button type="submit">Next</button></a>  -->
+		 <br>
+		<br>
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="otp2.js"></script> 
