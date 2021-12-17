@@ -18,7 +18,7 @@ var lc = [{
     imgLink:"https://images.bewakoof.com/t320/verdant-green-apple-cut-raglan-half-sleeve-t-shirt-360879-1639137548-1.jpg",
     color: "#1e6e79"
 }]
-
+var total = 0;
     lc.map(function(elem){
         var row = document.createElement("tr")
         var col1 = document.createElement("td")
@@ -44,9 +44,9 @@ var lc = [{
         size.setAttribute("id","lsc")
         color.setAttribute("id","lsc")
         col2.setAttribute("id","lcol2")
+        col4.setAttribute("id","lcol4")
 
         col2.textContent = elem.price 
-        // col3.textContent = elem.qty
         col4.style.textAlign="center"
         name.textContent = elem.name
         info.textContent = elem.info
@@ -83,21 +83,29 @@ var lc = [{
         var count = 1;
         var p = elem.price.trim().split("₹")
         col4.textContent="₹"+p[1]*count;
+        total += p[1]*count;
         function myplusFunc(){
             count++;
             cDiv.innerHTML=count;
-            console.log(count);
+            total += +p[1];
             col4.textContent="₹"+p[1]*count;
+            totalPrice()
         }
         function myminusFunc(){
-            if(count<=0){
+            if(cDiv.textContent==0){
                 mDiv.removeEventListener("click",myminusFunc)
             }
             else{
                 count--;
                 cDiv.innerHTML=count;
-                console.log(count);
+                total -= +p[1];
+                col4.textContent="₹"+p[1]*count;
+                totalPrice()
             }
-            col4.textContent="₹"+p[1]*count;
         }
     })
+    totalPrice()
+    function totalPrice(){
+        document.querySelector("#lbag").textContent=total;
+    }
+    
