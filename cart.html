@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+
+#xcartdiv {
+
+margin-left: 5%;
+width: 90%;
+}
+#xmybag {
+text-align: center;
+}
+.xmybagheading {
+display: flex;
+/* border: 1px solid red; */
+width: 100%;
+flex-direction: row;
+gap: 245px;
+margin-left: 1%;
+margin-right: 50%;
+line-height: 1px;
+}
+
+.xprodctcatlog {
+display: flex;
+flex-direction: row;
+gap: 2%;
+
+/* border: 3px solid  red; */
+}
+.xcheckoutdiv {
+
+/* border: 2px solid black; */
+margin-left: 30px;
+
+width: 30%;
+}
+.xcheckoutdiv> button {
+width: 250px;
+height: 40px;
+
+font-size: 18px;
+padding-left: 15px;
+padding-right: 15px;
+border: 1px solid black;
+background-color: black;
+color: white;
+}
+#xcalcualteshippingdiv {
+/* border: 1px solid grey; */
+display: flex;
+flex-direction: row;
+gap: 7%;
+margin-left: 4%;
+margin-right: 4%;
+}
+#xcal_shipp > button {
+margin-top: 20px;
+width: 200px;
+height: 30px;
+margin-right: 10%;
+font-size: 20px;
+border: 1px solid black;
+background-color: black;
+color: white;
+}
+.country {
+margin-left: 7px;
+padding-top: 5%;
+padding-bottom: 5%;
+}
+.Province {
+padding-top: 5%;
+padding-bottom: 5%;
+}
+.postal {
+padding-top: 5%;
+padding-bottom: 5%;
+}
+#xcal_shipp {
+
+padding-top: 5%;
+padding-bottom: 5%;
+}
+input {
+width: 280px;
+height: 35px;
+}
+select {
+width: 300px;
+height: 40px;
+}
+legend{
+  margin-left: 42%;
+}
+
+#xquantityitem{
+  border: 1px solid black;
+  
+  width: 150px;
+  height: 45px;
+ margin-top: 3%;
+ margin-right: 10%;
+ margin-left: 7%;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <!-- My Bag Headding -->
+    <h1 id="xmybag"><u>My Bag</u></h1>
+
+
+
+    <!-- Product data eg Img title price -->
+
+
+
+    <div id="xcartdiv">
+        
+               <div class="xmybagheading">
+                <h3>Product</h3>
+                <h3>Price</h3>
+                <h3>Quantity</h3>
+                <h3>Total</h3>
+      </div>
+
+      <hr style="margin-right: 25%;"  />
+      <div class="xprodctcatlog">
+              <img
+          src="https://cdn.shopify.com/s/files/1/0584/9399/3141/products/167303_0f6ce74154714e52880e187f8245ecd1_image1_zoom_120x.jpg?v=1631100076"
+          alt=""
+              />
+        <div class="titlediv">
+                <h4>K Denim Stone Wash Skinny Fit Jeans</h4>
+        
+                  <p style="color: grey; line-height: 1px;">Size: 28</p>
+                  <p style="color: grey;line-height: 1px">Color: Grey</p>
+                  <i  class="fas fa-edit"></i> &nbsp;&nbsp;
+                   <i class="far fa-trash-alt"></i>
+           
+
+        </div>
+        
+        <h3><strike>RS 1400</strike>  
+            RS&nbsp;700</h3>
+        <div id="xquantityitem">
+                  <p style="margin-left: 10px;"> <i class="far fa-trash-alt"></i> &nbsp;&nbsp; &nbsp;  <strong>1</strong>   &nbsp; &nbsp; &nbsp; &nbsp; <i class="fas fa-plus"></i></p>
+           
+        </div>
+                 <h3>RS&nbsp;700</h3>
+      
+        <div class="xcheckoutdiv">
+                <h3>PRICE SUMMARY</h3>
+        
+                <h4>BAG TOTAL
+                ₹ 700</h4>
+                <p>Tax included and shipping calculated at checkout
+
+                </p>
+                <button>CHECK OUT</button>
+        </div>
+        
+      </div>
+
+    </div>
+
+
+    <!-- Estimate price -->
+
+    <fieldset ">
+                   <legend class="legend"> <h2>Estimate Shipping</h2></legend>
+              <div id="xcalcualteshippingdiv">
+                  <div class="country">
+                  <label for="">Country</label>
+                  <br />
+              <select name="" id="">
+                  <option value="">India</option>
+              </select>
+        </div>
+
+        <div class="Province">
+          <label for="">Province</label>
+          <br />
+          <select name="" id="">
+            <option value="AN">Andaman and Nicobar Islands</option>
+            <option value="AP">Andhra Pradesh</option>
+            <option value="AR">Arunachal Pradesh</option>
+            <option value="AS">Assam</option>
+            <option value="BR">Bihar</option>
+            <option value="CH">Chandigarh</option>
+            <option value="CT">Chhattisgarh</option>
+            <option value="DN">Dadra and Nagar Haveli</option>
+            <option value="DD">Daman and Diu</option>
+            <option value="DL">Delhi</option>
+            <option value="GA">Goa</option>
+            <option value="GJ">Gujarat</option>
+            <option value="HR">Haryana</option>
+            <option value="HP">Himachal Pradesh</option>
+            <option value="JK">Jammu and Kashmir</option>
+            <option value="JH">Jharkhand</option>
+            <option value="KA">Karnataka</option>
+            <option value="KL">Kerala</option>
+            <option value="LA">Ladakh</option>
+            <option value="LD">Lakshadweep</option>
+            <option value="MP">Madhya Pradesh</option>
+            <option value="MH">Maharashtra</option>
+            <option value="MN">Manipur</option>
+            <option value="ML">Meghalaya</option>
+            <option value="MZ">Mizoram</option>
+            <option value="NL">Nagaland</option>
+            <option value="OR">Odisha</option>
+            <option value="PY">Puducherry</option>
+            <option value="PB">Punjab</option>
+            <option value="RJ">Rajasthan</option>
+            <option value="SK">Sikkim</option>
+            <option value="TN">Tamil Nadu</option>
+            <option value="TG">Telangana</option>
+            <option value="TR">Tripura</option>
+            <option value="UP">Uttar Pradesh</option>
+            <option value="UT">Uttarakhand</option>
+            <option value="WB">West Bengal</option>
+          </select>
+        </div>
+
+        <div class="postal">
+          <label for="">Postal/Zip Code </label>
+          <br />
+          <input type="number" />
+        </div>
+        <div id="xcal_shipp">
+          <button type="button" >Calculate Shipping</button>
+        </div>
+      </div>
+    </fieldset>
+  </body>
+</html>

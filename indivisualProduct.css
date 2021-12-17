@@ -1,0 +1,465 @@
+/* header css */
+.lheader{
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 135px;
+}
+body{
+    margin-right: 2%;
+    margin-left: 2%;
+} 
+#rheadinglogo{    
+    /* position: -webkit-sticky; */
+    /* position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 120px; */
+    /* border: 1px solid darkmagenta; */
+    display: flex;
+    margin-top: 10px;
+    background-color: white;
+    z-index: 2;
+}
+#rheading{
+    text-align: center;
+    /* border: 1px solid purple; */
+    width: 50%;
+    height: 130px;
+    justify-content: center;
+    margin-left: 27%;
+    margin-top: 0px;
+}
+#rheading p{
+    cursor: pointer;
+}
+#rKOOVS{
+    /* border: 1px solid black; */
+    width: 50%;
+    height: 40%;
+    margin-left: 22%;
+}
+#rKOOVS p{
+    margin-top: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 34px;
+}
+#rMW{
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 1px solid tomato; */
+    width: 90%;
+    margin-top: 18px;
+    margin-left: 4%;
+}
+#rMW p{
+    margin-top: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+.rmenbutton{
+    position: relative;
+    display: inline-block;
+}
+.rwombutton{
+    position: relative;
+    display: inline-block;
+}
+.rmendrop,.rwomdrop{
+    display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.rmendrop a,.rwomdrop a{
+  color: black;
+  padding: 7px;
+  text-decoration: none;
+  display: block;
+}
+/* .rmendrop a:hover,.rwomdrop a:hover{
+    background-color: none;
+} */
+.rmenbutton:hover .rmendrop,.rwombutton:hover .rwomdrop{
+    display: block;
+}
+.rmenlist,.rwomlist{
+    display: flex;
+    padding: 10%;
+    padding-top: 5%;
+    background-color: white;
+    border-radius: 10px;
+    width: 190%;
+    height: 200%;
+    text-align: center;
+    justify-content: space-between;
+}
+.rmenlist div a,.rwomlist div a{
+    color: rgb(110, 107, 107);
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+/* .rwomlist div{
+    padding: 4%;
+} */
+#r1mw{
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+#rlogo{
+    /* border: 1px solid green; */
+    width: 25%;
+    height: 50px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: end;
+}
+#rlogo img{
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    margin-left: 0px;
+    cursor: pointer;
+}
+.rsearch{
+    position: relative;
+    display: inline-block;
+}
+.rsearchdrop{
+  display: none;
+  border-radius: 10px;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.rsearchdrop select{
+    color: black;
+    border-radius: 10px;
+    border: none;
+    justify-content: center;
+    width: 140%;
+    padding: 15px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    font-size: 13px;
+    color: darkgray;
+    font-family: 'Poppins', sans-serif;
+}
+.rsearchdrop div{
+    display: flex;
+    width: 140%;
+}
+.rsearchdrop div button,input{
+    padding: 10px;
+    border: none;
+    color: darkgray;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    color: black;
+    border-radius: 4px;
+
+}
+.rsearchdrop div button{
+    max-height: 100%;
+    padding: 6px;
+    background-color: lightgray;
+    width: 25%;
+    margin-left: 0px;
+    cursor: pointer;
+}
+.rsearch:hover .rsearchdrop{
+    display: block;
+}
+.rinputlogo{
+    width: 75%;
+}
+
+/* indivisual product page */
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.lbar{
+    width: 75%;
+    height: 40px;
+    margin: auto;
+    font-size: 13px;
+    color:#454545;
+}
+.lmainContainer{
+    width: 75%;
+    height: 800px;
+    margin: auto;
+    display: flex;
+}
+#limgContainer{
+    width: 48%;
+    height: 100%;
+}
+#linfoContainer{
+    width: 50%;
+    height: 100%;
+    margin-left: 2%;
+}
+#linfo{
+    width: 100%;
+    height: 30%;
+    line-height: 20px;
+}
+#lsize{
+    width: 100%;
+    height: 10%;
+    margin-top: 2%;
+}
+#lcolor{
+    width: 100%;
+    height: 10%;
+}
+#lbutton{
+    width: 100%;
+    height: 6%;
+}
+#loffer{
+    width: 98%;
+    height: 13%;
+    border: 1px solid rgb(190, 188, 188);
+    margin-top: 2%;
+    line-height: 17px;
+    padding-left: 2%;
+}
+#lprice{
+    font-weight: bold;
+    font-size: 20px;
+}
+#lorgPrice{
+    font-size: 14px;
+    text-decoration: line-through;
+    color: #8f8f8f;
+}
+#loff{
+    color: red;
+    font-weight: bold;
+}
+#lbuy{
+    font-family: sans-serif;
+    padding: 2% 5%;
+    background-color: #d3d3d3;
+    border: 1px solid transparent;
+    font-weight: bold;
+}
+#lbuy:hover{
+    background-color: black;
+    color: white;
+}
+#lcart{
+    font-family: sans-serif;
+    padding: 2% 5%;
+    margin-left: 1%;
+    background-color: black;
+    color: white;
+    border: 1px solid transparent;
+    font-weight: bold;
+}
+#lLogo{
+    margin-left: 2%;
+    font-size: 20px;
+}
+.fa-facebook-f:hover{
+    color: rgb(6, 29, 243);
+    zoom: 110%;
+}
+.fa-twitter:hover{
+    color: rgb(6, 168, 243);
+    zoom: 110%;
+}
+.fa-whatsapp:hover{
+    color: rgb(5, 255, 88);
+    zoom: 110%;
+}
+#lsizeButton{
+    padding: 1.5% 1.5%;
+    border-radius: 50%;
+    border: 1px solid rgb(212, 211, 211);
+    background: white;
+    margin-top: 1%;
+}
+#lsizeButton:hover{
+    background: black;
+    color: white;
+    font-weight: bold;
+}
+#lcol{
+    border-radius: 50%;
+    height: 86%;
+    width: 86%;
+    margin: 7% 7%;
+}
+#lcolDiv{
+    border: 2px solid black;
+    height: 35%;
+    width: 4%;
+    border-radius: 50%;
+}
+#laddFav{
+    padding: 1.35% 1.7%;
+    border: 1px solid black;
+    background: white;
+    margin-left: 1%;
+}
+.ladd{
+    font-size: 20px;
+}
+@media only screen and (min-width:376px) and (max-width:769px){
+    .lbar{
+        width: 100%;
+        height: 50px;
+    }
+    .lmainContainer{
+        width: 100%;
+        height: 0px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #limgContainer{
+        width: 100%;
+    }
+    #linfoContainer{
+        width: 100%;
+        height: 130%;
+        margin-left: 0%;
+    }
+    #loffer{
+        height: 15%;
+    }
+}
+
+/* indivisual product footer */
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+#vmainprod{
+    width: 98%;
+    display: flex;
+    padding: 10px;
+}
+
+.vleft{
+    width: 51%;
+}
+.vgrey{
+    border: 1px solid rgb(187, 187, 187);
+    padding: 10px 15px;
+}
+.vright{
+    width: 35%;
+    margin-left: 3%;
+}
+.vleft11{
+    display: flex;
+}
+.vleft11 > div{
+    padding: 0px 40px;    
+}
+.vborder{
+    border-bottom: 1px solid black;
+}
+.vsize3{
+    font-weight: lighter;
+    font-size: 16px;
+}
+.vseprate{
+    line-height: 30px;
+    font-size: 15px;
+    font-weight: 200;
+    color: rgb(31, 31, 31);
+}
+.vinput{
+    width: 65%;
+    height: 30px;
+    padding: 1px 10px;
+}
+.vbutton11{
+    margin-left: 10px;
+    width: 25%;
+    height: 36px;
+    border: 2px solid black;
+    background-color:  #fff;
+    cursor: pointer;
+    color: #222;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.vdot{
+    /* border:1px solid black; */
+    /* height: 20px; */
+    padding: 25px 0px;
+    font-size: 14px;
+    color: rgb(34, 34, 34);
+}
+
+.lfoot{
+    width: 70%;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#ldiv{
+    height: 100%;
+    width: 19%;
+}
+#limgFoot{
+    height: 75%;
+    width: 100%;
+}
+#limgInfo{
+    height: 25%;
+    width: 100%;
+    line-height: 0px;
+}
+#lco{
+    height: 23px;
+    width: 26px;
+    background-color: #cecdcd;
+    padding-top: 1%;
+    border-radius: 50%;
+}
+#lcolo{
+    margin: auto;
+    height: 79%;
+    width: 80%;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+#lnam{
+    font-size: 15px;
+}
+#linf{
+    font-size: 12px;
+    line-height: 13px;
+    color: #777777;
+    font-weight: normal;
+}
+#lorgPric{
+    font-size: 12px;
+    text-decoration: line-through;
+    color:#989898;
+}
+#loffe{
+    color: red;
+}
+#lh{
+    text-align: center;
+}
