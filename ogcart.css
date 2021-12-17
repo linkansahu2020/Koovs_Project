@@ -13,7 +13,7 @@ body{
 .vcenter{
     text-align: center;
     /* border: 1px solid black; */
-    margin-top: 5px;
+    margin-top: 50px;
 }
 .vsideflex{
     display: flex;
@@ -91,6 +91,7 @@ h3{
   }
   .toppull{
     margin-top: 20px;
+    margin-bottom: 20px;
     /* border-color: ; */
     /* border: 2px solid rgb(165, 165, 165); */
 
@@ -122,5 +123,12 @@ h3{
 /* #lqntDiv>div{
     border: 1px solid red;
 } */
+table{
+    border-collapse: collapse;
+}
+td,th{
+    border: 1px solid transparent;
+    border-bottom: 1px solid black;
+}
 
   

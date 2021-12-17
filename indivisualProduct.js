@@ -12,6 +12,24 @@ document.querySelector("#lprice").textContent=arr[0].price;
 document.querySelector("#lorgPrice").textContent=arr[0].orgPrice;
 document.querySelector("#loff").textContent=arr[0].offer;
 
+document.getElementById("lcart").addEventListener("click",addItemToCart);
+function addItemToCart(){
+    var cart = JSON.parse(localStorage.getItem("cartData"));
+    if(localStorage.getItem("cartData")==null){
+        localStorage.setItem("cartData",JSON.stringify(arr))
+    }
+    else{
+        var imgL = !!cart.find((item)=>item.imgLink==arr[0].imgLink)
+        if(!imgL){
+            cart.push(arr[0]);
+            localStorage.setItem("cartData",JSON.stringify(cart))
+        }
+    }
+}
+document.getElementById("lbuy").addEventListener("click",buyNow);
+function buyNow(){
+    window.location.href="ogcart.html";
+}
 document.querySelector(".s24").addEventListener("click",myFunc1);
 function myFunc1(){
     var value = document.querySelector(".s24").value;
@@ -48,7 +66,6 @@ function myFunc6(){
     document.querySelector("#lno_size").textContent=value;
     arr[0].size = 34;
 }
-console.log(arr);
 document.querySelector("#lno_col").textContent=arr[0].color;
 var colo = document.querySelector("#lcol");
 colo.style.background=arr[0].color;

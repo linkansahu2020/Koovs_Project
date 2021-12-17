@@ -1,23 +1,4 @@
-var lc = [{
-    name:"KOOVS",
-    info:"Old Gold Fashion Sweatshirt Hoodie Dress AW 21",
-    price:"₹1149 ",
-    orgPrice:"₹1899",
-    gender:"Woman",
-    offer:" 47% OFF",
-    imgLink:"https://images.bewakoof.com/t540/old-gold-fashion-sweatshirt-hoodie-dress-aw-21-366303-1638453471-1.jpg",
-    color: "Yellow"
-},
-{
-    name:"Blue Saint",
-    info:"Scratched Dye Casual Wear Basic Tee",
-    price:"₹489 ",
-    orgPrice:"₹699",
-    gender:"Man",
-    offer:" 31% OFF",
-    imgLink:"https://images.bewakoof.com/t320/verdant-green-apple-cut-raglan-half-sleeve-t-shirt-360879-1639137548-1.jpg",
-    color: "#1e6e79"
-}]
+var lc = JSON.parse(localStorage.getItem("cartData"));
 var total = 0;
     lc.map(function(elem){
         var row = document.createElement("tr")
@@ -38,7 +19,7 @@ var total = 0;
         img.setAttribute("height","120px")
         img.setAttribute("width","100px")
         col1.style.display="flex"
-        col1.style.lineHeight="10px"
+        col1.style.lineHeight="0px"
         div.style.marginLeft="2%"
         info.setAttribute("id","lin")
         size.setAttribute("id","lsc")
