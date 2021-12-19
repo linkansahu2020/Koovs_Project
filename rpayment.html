@@ -11,7 +11,8 @@
 <body>
     <div id="rrmainbox">
         <div id="rr1stbox">
-            <p>Price Overview to be Paid :</p>
+            <p>Price Overview to be Paid : ₹ <b><span class="totalprice"></span></b></p>
+            
         </div>
         <div id="rr2ndbox">
             <div id="rpaymentoption">
@@ -38,3 +39,7 @@
     </div>
 </body>
 </html>
+<script>
+    var price=JSON.parse(localStorage.getItem("finalprice"));
+    document.querySelector(".totalprice").textContent=price;
+</script>
