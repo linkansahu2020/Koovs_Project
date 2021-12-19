@@ -1,0 +1,265 @@
+
+/* header css */
+/* .lheader{
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 145px;
+} */
+
+/* footer page css */
+
+* {
+    font-family: "Poppins", sans-serif;
+  }
+  #vmain {
+    /* border: 1px solid red; */
+    width: 95%;
+    height: 600px;
+  }
+  .vtag {
+    /* border: 1px solid purple; */
+    margin-top: 0px;
+    margin-left: 3px;
+    width: 30%;
+    border-bottom: 2px solid black;
+  }
+  .vnum {
+    color: gray;
+  }
+  .vdetails {
+    /* border: 1px solid red; */
+    line-height: 30px;
+    height: 120px;
+    font-size: 13px;
+  }
+  .vdetails2 {
+    line-height: 30px;
+    height: 300px;
+    overflow-y: scroll;
+    margin-bottom: 30px;
+    font-size: 13px;
+  }
+  ::-webkit-scrollbar {
+    width: 2px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(163, 163, 163);
+    border-radius: 60px;
+  }
+  .vlabel {
+    margin-top: 4px;
+    margin-left: 10px;
+  }
+  
+  .vcolor {
+    height: 250px;
+    overflow-y: scroll;
+    margin-bottom: 30px;
+    font-size: 13px;
+  }
+  
+  .vdet {
+    display: flex;
+    height: 28px;
+    margin-top: 8px;
+  }
+  .vcolmain {
+    /* border: 1px solid red; */
+    border-radius: 50%;
+    height: 100%;
+    width: 10%;
+  }
+  
+  .vaqua {
+    background-color: aqua;
+  }
+  .vbeige {
+    background-color: rgb(240, 222, 186);
+  }
+  .vblack {
+    background-color: black;
+  }
+  .vblue {
+    background-color: rgb(168, 188, 212);
+  }
+  
+  .vbrown {
+    background-color: brown;
+  }
+  .vcharcoal {
+    background-color: darkslategrey;
+  }
+  .vgreen {
+    background-color: green;
+  }
+  .vgrey {
+    background-color: grey;
+  }
+  .vindigo {
+    background-color: indigo;
+  }
+  
+  .vivory {
+    background-color: ivory;
+  }
+  .vkhaki {
+    background-color: khaki;
+  }
+  .vlblue {
+    background-color: lightblue;
+  }
+  .vmaroon {
+    background-color: maroon;
+  }
+  .vmauve {
+    background-color: rgb(224, 176, 255);
+  }
+  .vmixed {
+    background-color: rgb(229, 229, 229);
+  }
+  .vmulti {
+    background-color: rgb(229, 229, 229);
+  }
+  
+  .vsize {
+    line-height: 30px;
+    height: 300px;
+    overflow-y: scroll;
+    margin-bottom: 30px;
+    font-size: 13px;
+  }
+  .vshirt {
+    line-height: 30px;
+    height: 120px;
+    font-size: 13px;
+  }
+  
+
+/* product page css */
+.lmain{
+    /* border: 1px solid red; */
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    font-family: poppins;
+}
+.lcontainerInfo{
+  /* border: 5px solid tomato; */
+    width: 15%;
+}
+.lcontainer{
+  /* border: 1px solid blue; */
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.lbar{
+  /* border: 1px solid purple; */
+    height: 50px;
+    width: 108%;
+    display: flex;
+    /* margin-left: 1%; */
+}
+#lselect{
+    margin-left: auto;
+    border-radius: 30px;
+    height: 40px;
+    margin-top: 5px;
+    font-family: poppins;
+    background: white;
+    text-align: center;
+    
+}
+#lno_cloth{
+    width: 800px;
+    margin-left: 30px;
+}
+#lmainDiv{
+  /* border: 1px solid purple; */
+    height: 90%;
+    margin-bottom: 3%;
+    margin-left: 10px;
+}
+#linfoDiv{
+    width: 95%;
+    height: 25%;
+    line-height: 0px;
+    font-weight: bold;
+}
+#limgDiv{
+    width: 95%;
+    height: 75%;
+    cursor: pointer;
+}
+#lname{
+    font-size: 15px;
+}
+#linfo{
+    font-size: 12px;
+    line-height: 13px;
+    color: #777777;
+    font-weight: normal;
+}
+#lorgPrice{
+    font-size: 12px;
+    text-decoration: line-through;
+    color:#989898;
+}
+#lcol{
+    height: 23px;
+    width: 26px;
+    background-color: #cecdcd;
+    padding-top: 1%;
+    border-radius: 50%;
+}
+#lcolor{
+    margin: auto;
+    height: 79%;
+    width: 80%;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+#loffer{
+    color: red;
+}
+@media only screen and (min-width:376px) and (max-width:769px){
+    .lmain{
+        width: 100%;
+        padding-left: 5px;
+    }
+    .lcontainerInfo{
+        display: none;
+    }
+    .lcontainer{
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+    }
+    #lselect{
+        margin-left: 0px;
+    }
+    #lno_cloth{
+        width: 570px;
+    }
+}
+@media only screen and (max-width:375px){
+    .lmain{
+        width: 100%;
+        padding-left: 3px;
+    }
+    .lcontainerInfo{
+        display: none;
+    }
+    .lcontainer{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    #lselect{
+        margin-left: 0px;
+    }
+    #lno_cloth{
+        width: 200px;
+        font-size: 12px;
+    }
+}
